@@ -5,7 +5,7 @@ show_date: true
 title: "Kobe: Not just for Beef"
 date: 2024-03-24
 img: posts/20240324/the-traveling-historian-kobe.jpeg
-tags: [trip planning]
+tags: [city guide,japan,kobe]
 author: William Mattingly
 description: "Let's explore Kobe and its many offerings, making it the ideal day trip from Osaka."
 ---

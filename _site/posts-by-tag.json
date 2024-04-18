@@ -3,10 +3,38 @@
 [   
       
   {
-  "tag" : "trip planning",
+  "tag" : "city guide",
   "posts" : [
       
-      "./kobe-travel-guide.html",
+      "./kobe-travel-guide.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "japan",
+  "posts" : [
+      
+      "./kobe-travel-guide.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "kobe",
+  "posts" : [
+      
+      "./kobe-travel-guide.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "trip planning",
+  "posts" : [
       
       "./starting-the-adventure-copy-2.html"
       
