@@ -2,24 +2,34 @@
 layout: home-page
 ---
 {% include calculate_relative_base.html %}
-
-<ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
-  {% include remove_double_slash.html %}
-  <li>
-    <div class="post-card">
-      <a href="{{ post_url }}" title="{{ post.title }}" class="post-card-image" style="background: url('{{ relativebase }}assets/img/{{ post.img }}') center no-repeat; background-size: cover;">
-      </a>
-      <div class="post-card-body">
-        <p class="post-card-title-and-meta">
-          
-          <a href="{{ post_url }}" class="post-card-link">
-          {{ post.title }}
-          </a>
-          {% include post_meta.html type="post-card-meta" date="none" %}
-        </p>
+<div class="flex-container transparent">
+  <!-- <div class="page-image"> -->
+    <!-- Apply additional class for main page cover styling -->
+    <div class="universal-cover-image main-page-cover" style="background-image: url('{{ relativebase }}assets/img/branding/header-image.jpeg');"></div>
+  <!-- </div> -->
+  <div class="universal-wrapper">
+    <div class="page-content">
+      <div class="header-page">
+        <ol class="post-card-box clearfix">
+          {% for post in paginator.posts %}
+          {% include remove_double_slash.html %}
+          <li>
+            <div class="post-card">
+              <a href="{{ post_url }}" title="{{ post.title }}" class="post-card-image" style="background-image: url('{{ relativebase }}assets/img/{{ post.img }}');">
+              </a>
+              <div class="post-card-body">
+                <p class="post-card-title-and-meta">
+                  <a href="{{ post_url }}" class="post-card-link">
+                    {{ post.title }}
+                  </a>
+                  {% include post_meta.html type="post-card-meta" date="none" %}
+                </p>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
       </div>
     </div>
-  </li>
-  {% endfor %}
-</ol>
+  </div>
+</div>
